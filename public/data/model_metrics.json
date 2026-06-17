@@ -1,0 +1,26 @@
+{
+  "lightgbm_poisson": {
+    "mae": 7.3,
+    "poisson_deviance": 1.9,
+    "rmse": 9.8,
+    "train_period": "Nov 2023 - Feb 2024",
+    "test_period": "Mar 2024 - Apr 2024"
+  },
+  "poisson_glm": {
+    "mae": 9.1,
+    "poisson_deviance": 2.6,
+    "rmse": 12.3
+  },
+  "naive_baseline": {
+    "mae": 12.4,
+    "rmse": 16.7
+  },
+  "training_info": {
+    "features": ["zone_id_encoded", "day_of_week", "time_band", "month", "is_weekend", "lag_7_count", "rolling_mean_28", "archetype_encoded", "impact_index"],
+    "target": "violation_count",
+    "panel_rows": 560,
+    "zones": 20,
+    "days": 7,
+    "time_bands": 4
+  }
+}
